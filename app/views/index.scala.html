@@ -19,7 +19,7 @@
       <div ng-repeat="message in messages" layout="column" layout-align="{{message.sender=='BOT' ? 'start start' : 'start end'}}">
         <md-card style="max-width=75%; border-radius: 10px; padding: 10px; font-size: 14px;"
         ng-style="message.sender=='BOT'?
-        {'background-color':'#e5e5e3'}:
+        {'background-color':'##bac1bb'}:
         {'background-color':'#cecdc8'}">
 
         <span>{{message.text}}</span>
@@ -38,7 +38,7 @@
                </md-input-container>
            </form>
            <md-button flex="10" style="height: 100%; padding: 0px " class="md-icon-button " ng-click="sendMessage() ">
-               <md-icon style="height: 100%; padding: 0px; " md-svg-icon="/assets/images/ic_chat_48px.svg"></md-icon>
+               <md-icon style="height: 100%; padding: 0px; " md-svg-icon="/assets/images/browser.svg"></md-icon>
            </md-button>
        </md-card>
    </md-card>
