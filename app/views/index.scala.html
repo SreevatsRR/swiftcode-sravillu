@@ -11,7 +11,7 @@
 
    <md-card flex="none" layout="column">
        <md-content flex="90" id="message-pane" style="width:800px;
-      background:url(https://media3.giphy.com/media/26gsl2WC5tRxkemdi/giphy.gif);
+      background:url(http://neufeldinstitute.org/wp-content/uploads/2016/06/web-main-background-grayscale.jpg);
       background-repeat:no-repeat;
       background-size:cover;
       background-position:right-bottom">
@@ -19,8 +19,8 @@
       <div ng-repeat="message in messages" layout="column" layout-align="{{message.sender=='BOT' ? 'start start' : 'start end'}}">
         <md-card style="max-width=75%; border-radius: 10px; padding: 10px; font-size: 14px;"
         ng-style="message.sender=='BOT'?
-        {'background-color':'#f2f3f4'}:
-        {'background-color':'#b7bbbf'}">
+        {'background-color':'#e5e5e3'}:
+        {'background-color':'#cecdc8'}">
 
         <span>{{message.text}}</span>
         <span ng-bind-html="trust(message.feedResponse.description)">{{message.feedResponse.description}}</span>
